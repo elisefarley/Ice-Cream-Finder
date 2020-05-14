@@ -11,12 +11,13 @@ import MapKit
 import UIKit
 
 class LocationDetailsViewController: UIViewController {
-
+    
     var selectedMapItem = MKMapItem()
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
+    var name = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,18 +33,29 @@ class LocationDetailsViewController: UIViewController {
         address += selectedMapItem.placemark.postalCode!
         addressLabel.text = address
         phoneLabel.text = selectedMapItem.phoneNumber
+        name = nameLabel.text!
     }
     
-
+    
     @IBAction func onDirectionsButtonTapped(_ sender: Any) {
-    let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
         MKMapItem.openMaps(with: [selectedMapItem], launchOptions: launchOptions)
     }
     
-
+    
     @IBAction func onWebsiteButtonTapped(_ sender: Any) {
-    if let url = selectedMapItem.url {
-           present(SFSafariViewController(url: url), animated: true)
+        if let url = selectedMapItem.url {
+            present(SFSafariViewController(url: url), animated: true)
+        }
+    }
+    
+    @IBAction func onNotesButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "ToNotesSegue", sender: Any?.self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? NotesViewController {
+            destination.name = name
         }
     }
 }

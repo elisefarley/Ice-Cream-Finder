@@ -14,6 +14,8 @@
 		92EEB0D7246B1F0600094A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92EEB0D6246B1F0600094A17 /* Assets.xcassets */; };
 		92EEB0DA246B1F0600094A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EEB0D8246B1F0600094A17 /* LaunchScreen.storyboard */; };
 		92EEB0E2246B1FCD00094A17 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEB0E1246B1FCD00094A17 /* LocationDetailsViewController.swift */; };
+		92EEB0E4246B325500094A17 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEB0E3246B325400094A17 /* NotesViewController.swift */; };
+		92EEB0E6246B34D000094A17 /* IceCreamLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEB0E5246B34D000094A17 /* IceCreamLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		92EEB0D9246B1F0600094A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92EEB0DB246B1F0600094A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92EEB0E1246B1FCD00094A17 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
+		92EEB0E3246B325400094A17 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		92EEB0E5246B34D000094A17 /* IceCreamLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				92EEB0CF246B1EFC00094A17 /* SceneDelegate.swift */,
 				92EEB0D1246B1EFC00094A17 /* ViewController.swift */,
 				92EEB0E1246B1FCD00094A17 /* LocationDetailsViewController.swift */,
+				92EEB0E3246B325400094A17 /* NotesViewController.swift */,
+				92EEB0E5246B34D000094A17 /* IceCreamLocation.swift */,
 				92EEB0D3246B1EFC00094A17 /* Main.storyboard */,
 				92EEB0D6246B1F0600094A17 /* Assets.xcassets */,
 				92EEB0D8246B1F0600094A17 /* LaunchScreen.storyboard */,
@@ -142,7 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92EEB0E2246B1FCD00094A17 /* LocationDetailsViewController.swift in Sources */,
+				92EEB0E4246B325500094A17 /* NotesViewController.swift in Sources */,
 				92EEB0D2246B1EFC00094A17 /* ViewController.swift in Sources */,
+				92EEB0E6246B34D000094A17 /* IceCreamLocation.swift in Sources */,
 				92EEB0CE246B1EFC00094A17 /* AppDelegate.swift in Sources */,
 				92EEB0D0246B1EFC00094A17 /* SceneDelegate.swift in Sources */,
 			);
